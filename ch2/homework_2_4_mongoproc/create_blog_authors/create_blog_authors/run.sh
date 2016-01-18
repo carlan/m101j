@@ -1,2 +1,2 @@
-mvn compile exec:java -Dexec.mainClass=course.BlogController
+mvn clean compile exec:java -Dexec.mainClass=course.BlogController
 

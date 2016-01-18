@@ -21,7 +21,7 @@ def create_user(username, password):
     try:
         print "Trying to create a test user ", username
         cj = cookielib.CookieJar()
-        url = "http://localhost:8082/signup"
+        url = "http://localhost:8080/signup"
 
         data = urllib.urlencode([("email",""),("username",username), ("password",password), ("verify",password)])
         request = urllib2.Request(url=url, data=data)
@@ -58,7 +58,7 @@ def try_to_login(username, password):
     try:
         print "Trying to login for test user ", username
         cj = cookielib.CookieJar()
-        url = "http://localhost:8082/login"
+        url = "http://localhost:8080/login"
 
         data = urllib.urlencode([("username",username), ("password",password)])
         request = urllib2.Request(url=url, data=data)
